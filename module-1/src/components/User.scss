@@ -1,0 +1,61 @@
+.user-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem
+}
+
+.loading-message {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  font-size: 3rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.user {
+  display: flex;
+  width: 25rem;
+  padding: 5rem 2rem;
+  background-color: #e3f9ff;
+  align-items: center;
+  flex-direction: column;
+
+  &__data {
+    //background-color: #ff9c9c;
+    text-align: center;
+  }
+
+  &__name {
+    font-weight: bold;
+  }
+
+  &__country {
+    //font-size: rem;
+    margin-top: 1rem;
+  }
+
+  &__registration-info {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    white-space: pre-line;
+
+
+  }
+
+  &__registration-date::before {
+    white-space: pre;
+    content: "\a";
+  }
+
+  &__detailed-address {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+  }
+
+
+  &__picture {
+    margin-bottom: 2rem;
+    border-radius: 50%;
+  }
+}
